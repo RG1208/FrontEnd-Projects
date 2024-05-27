@@ -1,0 +1,102 @@
+.container {
+    width: 24vw;
+    height: 75vh;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    color: white;
+    font-family: Roboto;
+}
+
+.top {
+    display: flex;
+}
+
+.input {
+    height: 45px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+
+.top {
+    display: flex;
+}
+
+.img {
+    background-color: white;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.search {
+    height: 22px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.img2 {
+    height: 170px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.temp {
+    font-weight: bold;
+    margin-left: 135px;
+    font-size: 59px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.city {
+
+    margin-left: 105px;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity {
+    height: 30px;
+    margin-left: 40px;
+}
+
+.percentage {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.humid {
+    margin-top: 5px;
+    margin-left: 84px;
+    font-size: 15px;
+}
+
+.wind {
+    height: 35px;
+    margin-left: 0px;
+}
+
+.speed {
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.windspeed {
+    margin-top: 3px;
+    margin-left: 45px;
+    font-size: 15px;
+}
