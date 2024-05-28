@@ -13,16 +13,26 @@ function Todo() {
         let button = document.createElement("button");
         button.id = "before";
         li.appendChild(button)
+        let div = document.createElement("div");
+        div.innerHTML = "&#10060";
+        div.id = "delete";
+        li.appendChild(div)
 
         button.addEventListener("click", () => {
             button.id = "checked-before"
             li.id = "new"
+            div.id = "newDel"
         });
 
         button.addEventListener("dblclick", () => {
             button.id = "before"
             li.id = "double"
         });
+
+        div.addEventListener("click", () => {
+            li.remove();
+        });
+
     }
     inputBox.value = "";
 }
