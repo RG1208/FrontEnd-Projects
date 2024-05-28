@@ -33,11 +33,11 @@ body {
     display: flex;
 }
 
-.Name {
+#Name {
     border: none;
     background-color: rgb(236, 234, 234);
     height: 40px;
-    width: 300px;
+    width: 400px;
     margin-left: 20px;
     border-radius: 20px;
     padding-left: 20px;
@@ -49,9 +49,9 @@ body {
     border: none;
     font-size: 15px;
     height: 40px;
-    width: 80px;
+    width: 85px;
     border-radius: 20px;
-    margin-left: -50px;
+    margin-left: -85px;
     cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+#before {
     content: '';
     position: absolute;
     height: 28px;
@@ -71,16 +71,41 @@ ul li::before {
     border-radius: 50%;
     background-image: url(images/unchecked.png);
     background-size: cover;
+    border: none;
     background-position: center;
     top: 12px;
     left: 8px;
 }
 
-.checked {
+#double {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+#new {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
     color: #555;
     text-decoration: line-through;
 }
 
-.checked::before {
+#checked-before {
     background-image: url(images/checked.png);
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    border: none;
+    background-position: center;
+    top: 12px;
+    left: 8px;
 }
