@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 0, 75);
+}
+
+.container {
+    background-color: white;
+    width: 50vw;
+    height: 80vh;
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.top {
+    color: rgb(17, 0, 75);
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.line {
+    border: 0;
+    height: 2px;
+    background-color: #918f8f;
+    margin: 15px 20px;
+
+}
