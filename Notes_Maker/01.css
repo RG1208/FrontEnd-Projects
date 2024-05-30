@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.heading {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.main {
+    height: 45px;
+    padding-right: 10px;
+}
+
+
+
+.Notes {
+    background: linear-gradient(#9418fd, #571094);
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 13px;
+    font-size: 14px;
+    border-radius: 26px;
+}
+
+.create {
+    height: 15px;
+    padding: 13px 13px;
+}
