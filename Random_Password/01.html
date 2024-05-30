@@ -27,15 +27,17 @@
         </div>
         <hr class="line">
         <div class="third">
-            <input type="text" class="text" placeholder="Password">
-            <img src="images/copy.png" alt="copy-icon" class="copy">
+            <input type="text" id="text" placeholder="Password">
+            <img src="images/copy.png" alt="copy-icon" class="copy" onclick="copyPassword()">
         </div>
         <div class="forth">
-            <button class="generate">
+            <button class="generate" onclick="createPass()">
                 <img src="images/generate.png" class="generate-icon" alt="generate-icon">Generate Password
             </button>
+
         </div>
     </div>
+    <script src="01.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-const passBox = document.getElementsByClassName("text");
+const passBox = document.getElementById("text");
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijlmnopqrstuvwxyz";
@@ -8,9 +8,9 @@ const length = 12;
 const allChar = upperCase + lowerCase + specialChar + number;
 
 function createPass() {
-    let password = '';
-    password += upperCase[Math.floor(Math.random() * upperCase.length)];
-    password += lowerCase[Math.floor(Math.random() * lower.length)];
+    let password = "";
+    password = password + upperCase[Math.floor(Math.random() * upperCase.length)];
+    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
     password += specialChar[Math.floor(Math.random() * specialChar.length)];
     password += number[Math.floor(Math.random() * number.length)];
 
@@ -18,4 +18,9 @@ function createPass() {
         password += allChar[Math.floor(Math.random() * allChar.length)];
     }
     passBox.value = password;
+}
+
+function copyPassword() {
+    passBox.select();
+    document.execCommand("copy");
 }
