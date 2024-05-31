@@ -1,21 +1,31 @@
+let container = document.getElementById("toast-container");
+let SuccessMsg = 'Successfully Submitted!';
+let InvalidMsg = 'Invalid input,Check again!';
+let ErrorMsg = 'Please fix the error!';
+
 function showToast(msg) {
+
     const toast = document.createElement('div')
-    toast.className = 'toast';
+    toast.classList.add('toast');
     toast.innerHTML = msg;
 
-    const container = document.getElementById("toast-container");
+
     container.appendChild(toast);
 
-    setTimeout(function () {
-        toast.classList.add('show');
-    }, 100);
+    if (msg.includes('error')) {
+        toast.classList.add('error');
+    }
+    if (msg.includes('Successfully')) {
+        toast.classList.add('success');
+    }
+    if (msg.includes('Invalid')) {
+        toast.classList.add('invalid');
+    }
 
-    setTimeout(function () {
-        toast.classList.remove('show');
-        // Remove the toast from the DOM after it is hidden
-        setTimeout(function () {
-            container.removeChild(toast);
-        }, 500);
-    }, 3000);
+    setTimeout(() => {
+        toast.remove();
+    }, 3500)
+
+
 }
 

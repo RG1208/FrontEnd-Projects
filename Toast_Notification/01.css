@@ -34,30 +34,55 @@ body {
     margin-right: 20px;
 }
 
-.toast-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+#toast-container {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* Style for the toast message */
 .toast {
-    visibility: hidden;
-    min-width: 250px;
-    margin-bottom: 15px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
+    background-color: white;
+    height: 80px;
+    width: 400px;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     position: relative;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.5s, visibility 0.5s;
 }
 
-.toast.show {
-    visibility: visible;
-    opacity: 1;
+.toast::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(0, 15, 128);
+    position: absolute;
+    animation: anim 3.5s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+.toast.success::after {
+    background: green;
+}
+
+.error::after {
+    background: red;
+}
+
+.toast.invalid::after {
+    background: orange;
 }
