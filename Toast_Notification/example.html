@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification Example</title>
+    <style>
+        /* Style for the toast container */
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Style for the toast message */
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            margin-bottom: 15px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: relative;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toast container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Button to trigger toast -->
+    <button onclick="showToast('This is a toast notification!')">Show Toast</button>
+
+    <script>
+        function showToast(message) {
+            // Create toast element
+            var toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = message;
+
+            // Append toast to the container
+            var container = document.getElementById('toast-container');
+            container.appendChild(toast);
+
+            // Show the toast
+            setTimeout(function () {
+                toast.classList.add('show');
+            }, 100);
+
+            // Hide the toast after 3 seconds
+            setTimeout(function () {
+                toast.classList.remove('show');
+                // Remove the toast from the DOM after it is hidden
+                setTimeout(function () {
+                    container.removeChild(toast);
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
