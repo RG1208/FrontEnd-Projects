@@ -33,9 +33,27 @@ body {
     padding-right: 13px;
     font-size: 14px;
     border-radius: 26px;
+    cursor: pointer;
 }
 
 .create {
     height: 15px;
     padding: 13px 13px;
+}
+
+.input-Box {
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.delete {
+    bottom: 15px;
+    right: 15px;
+    position: absolute;
+    height: 20px;
+    cursor: pointer;
 }
