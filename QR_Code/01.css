@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #002339;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+}
+
+.container {
+    background-color: white;
+    height: 100%;
+    max-height: 600px;
+    width: 330px;
+    margin-left: 530px;
+    margin-top: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.main {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.type {
+    width: 300px;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.create {
+    margin-top: 25px;
+    color: white;
+    width: 307px;
+    background-color: rgba(32, 88, 210, 0.733);
+    border: none;
+    padding: 12px 20px 12px 20px;
+    margin-bottom: 30px;
+}
