@@ -19,10 +19,14 @@
 
     <div class="container">
         <p class="main">Enter your Name or URL</p>
-        <input type="text" class="type" placeholder="Text or URL">
-        <div class="btn">
-            <button class="create">Generate QR Code</button>
+        <input type="text" id="qrText" placeholder="Text or URL">
+
+        <div id="imgBox">
+            <img src="" id="qrImage">
         </div>
+
+
+        <button class="create" onclick="generateQR()">Generate QR Code</button>
     </div>
 
     <script src="01.js"></script>
