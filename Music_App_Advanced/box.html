@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6461ad95e2.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .card {
+            width: 400px;
+            padding: 30px 30px;
+            background-color: pink;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: rgb(120, 83, 83);
+            padding: 20px 20px 20px 20px;
+            font-size: 20px;
+            position: absolute;
+            right: -100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div id="cont"></div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+                <div class="box">
+                    <p>Lalkara</p>
+                    <p>Admiring You</p>
+                    <p>Bachke Bachke</p>
+                    <p>Softly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".fa-bars").addEventListener("click", () => {
+            document.querySelector(".box").style.right = "0";
+        }
+        )
+
+        document.querySelector(".fa-angle-left").addEventListener("click", () => {
+            document.querySelector(".box").style.right = "-100%";
+        }
+        )
+    </script>
+</body>
+
+</html>

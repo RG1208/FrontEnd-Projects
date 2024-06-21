@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .card {
@@ -101,4 +102,14 @@
 
 .time {
     display: flex;
+    margin-left: 325px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    right: -100%;
+    color: black;
 }

@@ -50,3 +50,13 @@ function formatTime(seconds) {
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs.toString().padStart(2, '0')}`;
 }
+
+document.querySelector(".fa-bars").addEventListener("click", () => {
+    document.querySelector(".box").style.right = "0";
+}
+)
+
+document.querySelector(".fa-angle-left").addEventListener("click", () => {
+    document.querySelector(".box").style.right = "-100%";
+}
+)
