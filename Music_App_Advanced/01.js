@@ -52,11 +52,27 @@ function formatTime(seconds) {
 }
 
 function Show() {
+    const circle2 = document.querySelector(".circle2");
+    sidebar.style.display = 'flex';
+}
+function Show() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'flex';
 }
 
 function remove() {
+    const circle1 = document.querySelector(".cirle1");
+    sidebar.style.display = 'none';
+}
+function remove() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'none';
+}
+
+
+function end() {
+    song.currentTime = song.duration
+}
+function start() {
+    song.currentTime = 0
 }
