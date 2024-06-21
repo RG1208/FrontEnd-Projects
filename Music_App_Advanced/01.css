@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .card {
@@ -102,26 +101,35 @@
 
 .time {
     display: flex;
-    margin-left: 325px;
 }
 
-.box {
-    background-color: white;
-    padding: 20px 20px 20px 20px;
-    font-size: 20px;
-    position: relative;
-    width: 180px;
-    margin-top: 0px;
-    color: black;
-    right: -2000%;
-
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
 
-.fa-bars {
-    position: relative;
-    z-index: 1;
+ul li {
+    list-style: none;
+    padding: 10px;
+    height: 50px;
 }
 
-.div.circle {
-    position: relative;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
 }

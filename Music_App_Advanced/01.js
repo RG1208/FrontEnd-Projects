@@ -51,14 +51,12 @@ function formatTime(seconds) {
     return `${minutes}:${secs.toString().padStart(2, '0')}`;
 }
 
-document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector(".box").style.right = "110px";
-    document.querySelector(".box").style.position = "relative";
-
+function Show() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'flex';
 }
-)
 
-document.querySelector(".fa-angle-left").addEventListener("click", () => {
-    document.querySelector(".box").style.right = "-2000%";
+function remove() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'none';
 }
-)
