@@ -71,7 +71,27 @@
     cursor: pointer;
 }
 
-.play {
-    background-color: rgb(154, 119, 125);
+.controls div:nth-child(2) {
+    background-color: rgb(255, 91, 119);
     color: white;
+    height: 80px;
+    width: 80px;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: rgb(255, 91, 119);
+    margin-top: 10px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 8px solid white;
+    color: rgb(255, 91, 119);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
