@@ -43,12 +43,16 @@
     border: 10px solid white;
     border-radius: 50%;
     height: 200px;
-    box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
+    box-shadow: 0 5px 10px rgba(27, 23, 23, 0.22);
 }
 
 .name {
     font-size: 20px;
     margin-top: 20px;
+}
+
+.artist {
+    margin-bottom: 20px;
 }
 
 .controls {
@@ -74,12 +78,11 @@
 .controls div:nth-child(2) {
     background-color: rgb(255, 91, 119);
     color: white;
-    height: 80px;
-    width: 80px;
+    transform: scale(1.5);
 }
 
 #progress {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 100%;
     background-color: rgb(255, 91, 119);
     margin-top: 10px;
@@ -94,4 +97,8 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.time {
+    display: flex;
 }
