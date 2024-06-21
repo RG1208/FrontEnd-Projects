@@ -49,5 +49,29 @@
 .name {
     font-size: 20px;
     margin-top: 20px;
+}
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(154, 119, 125);
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.play {
+    background-color: rgb(154, 119, 125);
+    color: white;
 }
