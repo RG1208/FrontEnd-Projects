@@ -44,14 +44,20 @@
 
         .fa-bars {
             color: red;
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
         }
     </style>
 </head>
 
 <body>
     <nav>
-        <div>
-            <i class="fa-solid fa-bars"></i>
+        <div class="circle">
+            <i class="fa-solid fa-angle-left" onclick="remove()"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars" onclick="Show()"></i>
         </div>
         <ul class="sidebar">
             <li>A</li>
@@ -61,6 +67,17 @@
 
         </ul>
     </nav>
+    <script>
+        function Show() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'flex';
+        }
+
+        function remove() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
