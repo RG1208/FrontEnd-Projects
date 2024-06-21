@@ -52,11 +52,13 @@ function formatTime(seconds) {
 }
 
 document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector(".box").style.right = "0";
+    document.querySelector(".box").style.right = "110px";
+    document.querySelector(".box").style.position = "relative";
+
 }
 )
 
 document.querySelector(".fa-angle-left").addEventListener("click", () => {
-    document.querySelector(".box").style.right = "-100%";
+    document.querySelector(".box").style.right = "-2000%";
 }
 )

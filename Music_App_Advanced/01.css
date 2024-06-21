@@ -109,7 +109,19 @@
     background-color: white;
     padding: 20px 20px 20px 20px;
     font-size: 20px;
-    position: absolute;
-    right: -100%;
+    position: relative;
+    width: 180px;
+    margin-top: 0px;
     color: black;
+    right: -2000%;
+
+}
+
+.fa-bars {
+    position: relative;
+    z-index: 1;
+}
+
+.div.circle {
+    position: relative;
 }
