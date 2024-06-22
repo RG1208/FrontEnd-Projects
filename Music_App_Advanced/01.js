@@ -52,18 +52,10 @@ function formatTime(seconds) {
 }
 
 function Show() {
-    const circle2 = document.querySelector(".circle2");
-    sidebar.style.display = 'flex';
-}
-function Show() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'flex';
 }
 
-function remove() {
-    const circle1 = document.querySelector(".cirle1");
-    sidebar.style.display = 'none';
-}
 function remove() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'none';
@@ -138,7 +130,8 @@ function Lalkara() {
     name.innerHTML = "Lalkara";
     poster.src = "Poster/Lalkara.jpeg";
     song.play();
-    ctrlIcon.classList.add("fa-play");
+    ctrlIcon.classList.remove("fa-play");
+    ctrlIcon.classList.add("fa-pause");
 }
 function Softly() {
     song.src = "Songs/Softly.mp3";
@@ -146,6 +139,7 @@ function Softly() {
     name.innerHTML = "Softly";
     poster.src = "Poster/Softly.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 
 }
@@ -155,6 +149,7 @@ function Mexico() {
     name.innerHTML = "Mexico";
     poster.src = "Poster/Mexico.jpeg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function KinaChir() {
@@ -163,6 +158,7 @@ function KinaChir() {
     name.innerHTML = "KinaChir";
     poster.src = "Poster/KinaChir.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function White() {
@@ -171,6 +167,7 @@ function White() {
     name.innerHTML = "White Brown Black";
     poster.src = "Poster/White.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function Admiring() {
@@ -179,6 +176,7 @@ function Admiring() {
     name.innerHTML = "Admirin' You";
     poster.src = "Poster/Admirin.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function Bachke() {
@@ -187,6 +185,7 @@ function Bachke() {
     name.innerHTML = "Bachke Bachke";
     poster.src = "Poster/bachke.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function Insane() {
@@ -195,6 +194,7 @@ function Insane() {
     name.innerHTML = "Insane";
     poster.src = "Poster/insane.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
 function Sidhu() {
@@ -203,5 +203,62 @@ function Sidhu() {
     name.innerHTML = "295";
     poster.src = "Poster/295.jpg";
     song.play();
+    ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
+
+
+
+
+
+// let artist = document.getElementById("artist");
+// let poster = document.getElementById("poster");
+// let name = document.getElementById("name");
+// let ctrlIcon = document.querySelector(".ctrlIcon"); // Assuming ctrlIcon is selected like this
+// let song = document.getElementById("song"); // Assuming song is selected like this
+
+// function playSong(songSrc, songArtist, songName, posterSrc, playIconClass) {
+//     song.src = songSrc;
+//     artist.innerHTML = songArtist;
+//     name.innerHTML = songName;
+//     poster.src = posterSrc;
+//     song.play();
+//     ctrlIcon.className = ""; // Reset the class name to avoid multiple fa-play/fa-pause classes
+//     ctrlIcon.classList.add(playIconClass);
+// }
+
+// function Lalkara() {
+//     playSong("Songs/Lalkara.mp3", "Diljit Dosanjh and Sultaan", "Lalkara", "Poster/Lalkara.jpeg", "fa-play");
+// }
+
+// function Softly() {
+//     playSong("Songs/Softly.mp3", "Ikky and Karan Aujla", "Softly", "Poster/Softly.jpg", "fa-pause");
+// }
+
+// function Mexico() {
+//     playSong("Songs/Mexico.mp3", "Karan Aujla", "Mexico", "Poster/Mexico.jpeg", "fa-pause");
+// }
+
+// function KinaChir() {
+//     playSong("Songs/KinaChir.mp3", "The PropheC", "KinaChir", "Poster/KinaChir.jpg", "fa-pause");
+// }
+
+// function White() {
+//     playSong("Songs/White.mp3", "Karan Aujla and Avvy Sra", "White Brown Black", "Poster/White.jpg", "fa-pause");
+// }
+
+// function Admiring() {
+//     playSong("Songs/AdmiringYou.mp3", "Karan Aujla", "Admirin' You", "Poster/Admirin.jpg", "fa-pause");
+// }
+
+// function Bachke() {
+//     playSong("Songs/Bachke.mp3", "Karan Aujla", "Bachke Bachke", "Poster/bachke.jpg", "fa-pause");
+// }
+
+// function Insane() {
+//     playSong("Songs/Insane.mp3", "AP Dhillon", "Insane", "Poster/insane.jpg", "fa-pause");
+// }
+
+// function Sidhu() {
+//     playSong("Songs/295.mp3", "Sidhu Moosewala", "295", "Poster/295.jpg", "fa-pause");
+// }

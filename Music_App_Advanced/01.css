@@ -28,7 +28,7 @@
     margin-bottom: 40px;
 }
 
-.circle1 {
+/* .circle1 {
     background-color: white;
     border-radius: 50%;
     border: none;
@@ -48,7 +48,7 @@
     color: rgb(180, 129, 138);
     box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
     line-height: 40px;
-}
+} */
 
 .poster {
     border: 10px solid white;
@@ -158,11 +158,28 @@ ul li:hover {
 .left {
     background-color: white;
     border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: rgb(180, 129, 138);
+    box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
+    color: rgb(180, 129, 138);
+    box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
+
 }
 
 .left:hover {
@@ -172,4 +189,5 @@ ul li:hover {
 
 .right:hover {
     color: white;
+    background-color: grey;
 }
