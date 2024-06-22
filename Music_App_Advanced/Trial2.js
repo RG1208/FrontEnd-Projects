@@ -132,12 +132,76 @@ let artist = document.getElementById("artist");
 let poster = document.getElementById("poster");
 let name = document.getElementById("name");
 
-function insane() {
-    let element = document.getElementById("insane");
+function Lalkara() {
+    song.src = "Songs/Lalkara.mp3";
+    artist.innerHTML = "Diljit Dosanjh and Sultaan";
+    name.innerHTML = "Lalkara";
+    poster.src = "Poster/Lalkara.jpeg";
+    song.play();
+    ctrlIcon.classList.add("fa-play");
+}
+function Softly() {
+    song.src = "Songs/Softly.mp3";
+    artist.innerHTML = "Ikky and Karan Aujla";
+    name.innerHTML = "Softly";
+    poster.src = "Poster/Softly.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+
+}
+function Mexico() {
+    song.src = "Songs/Mexico.mp3";
+    artist.innerHTML = "Karan Aujla";
+    name.innerHTML = "Mexico";
+    poster.src = "Poster/Mexico.jpeg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function KinaChir() {
+    song.src = "Songs/KinaChir.mp3";
+    artist.innerHTML = "The PropheC";
+    name.innerHTML = "KinaChir";
+    poster.src = "Poster/KinaChir.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function White() {
+    song.src = "Songs/White.mp3";
+    artist.innerHTML = "Karan Aujla and Avvy Sra";
+    name.innerHTML = "White Brown Black";
+    poster.src = "Poster/White.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function Admiring() {
+    song.src = "Songs/AdmiringYou.mp3";
+    artist.innerHTML = "Karan Aujla";
+    name.innerHTML = "Admirin' You";
+    poster.src = "Poster/Admirin.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function Bachke() {
+    song.src = "Songs/Bachke.mp3";
+    artist.innerHTML = "Karan Aujla";
+    name.innerHTML = "Bachke Bachke";
+    poster.src = "Poster/bachke.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function Insane() {
     song.src = "Songs/Insane.mp3";
     artist.innerHTML = "AP Dhillon";
     name.innerHTML = "Insane";
     poster.src = "Poster/insane.jpg";
+    song.play();
+    ctrlIcon.classList.add("fa-pause");
+}
+function Sidhu() {
+    song.src = "Songs/295.mp3";
+    artist.innerHTML = "Sidhu Moosewala";
+    name.innerHTML = "295";
+    poster.src = "Poster/295.jpg";
     song.play();
     ctrlIcon.classList.add("fa-pause");
 }

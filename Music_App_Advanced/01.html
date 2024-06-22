@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music App</title>
+    <title>Music Player Advanced</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,33 +20,31 @@
         <div class="card">
             <nav class="nav">
                 <div class="circle1" onclick="remove()">
-                    <i class="fa-solid fa-angle-left" onclick="remove()"></i>
+                    <i class="fa-solid fa-angle-left left" onclick="remove()"></i>
                 </div>
 
                 <div class="circle2" onclick="Show()">
-                    <i class="fa-solid fa-bars" onclick="Show()"></i>
+                    <i class="fa-solid fa-bars right" onclick="Show()"></i>
                     <ul class="sidebar">
-                        <li>Don't Look</li>
-                        <li>Softly</li>
-                        <li>Mexico</li>
-                        <li>Kina Chir</li>
-                        <li>White Brown Black</li>
-                        <li>Adminrin You</li>
-                        <li>Bachke Bachke</li>
-                        <li>Insane</li>
-                        <li>Take it easy</li>
-
-
-
+                        <li onclick="Lalkara()">Lalkara</li>
+                        <li onclick="Softly()">Softly</li>
+                        <li onclick="Mexico()">Mexico</li>
+                        <li onclick="KinaChir()">Kina Chir</li>
+                        <li onclick="White()">White Brown Black</li>
+                        <li onclick="Admiring()">Adminrin You</li>
+                        <li onclick="Bachke()">Bachke Bachke</li>
+                        <li onclick="Insane()">Insane</li>
+                        <li onclick="Sidhu()">295</li>
                     </ul>
                 </div>
+
             </nav>
-            <img src="Poster/Lalkara.jpeg" alt="Poster" class="poster">
-            <div class="name">Lalkara</div>
-            <div class="artist">Diljit Dosanjh and Sultaan</div>
+            <img src="Poster/Lalkara.jpeg" alt="Poster" class="poster" id="poster">
+            <div class="name" id="name">Lalkara</div>
+            <div class="artist" id="artist">Diljit Dosanjh and Sultaan</div>
 
             <audio id="song">
-                <source src="Songs/Lalkara_Diljit_Dosanjh_Sultaan.mp3" type="audio/mpeg">
+                <source id="gaana" src="Songs/Lalkara.mp3" type="audio/mpeg">
             </audio>
 
             <input type="range" value="0" id="progress">
