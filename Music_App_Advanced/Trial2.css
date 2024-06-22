@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: pink;
+    padding: 20px 20px;
+    text-align: center;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.circle1 {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: rgb(180, 129, 138);
+    box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
+    line-height: 40px;
+}
+
+.circle2 {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: rgb(180, 129, 138);
+    box-shadow: 0 5px 10px rgba(137, 15, 15, 0.22);
+    line-height: 40px;
+}
+
+.poster {
+    border: 10px solid white;
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 0 5px 10px rgba(27, 23, 23, 0.22);
+}
+
+.name {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.artist {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(154, 119, 125);
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    background-color: rgb(255, 91, 119);
+    color: white;
+    transform: scale(1.5);
+}
+
+#progress {
+    /* -webkit-appearance: none; */
+    width: 100%;
+    background-color: rgb(255, 91, 119);
+    margin-top: 10px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 8px solid white;
+    color: rgb(255, 91, 119);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.time {
+    display: flex;
+    margin-left: 330px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    height: 50px;
+}
+
+.sidebar {
+    position: fixed;
+    border-radius: 20px;
+    top: 50px;
+    right: 549px;
+    height: 596px;
+    width: 220px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
